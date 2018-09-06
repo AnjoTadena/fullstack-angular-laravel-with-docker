@@ -37,6 +37,6 @@ services:
       container_name: fullstack-angular-laravel-php-fpm
       working_dir: /application
       volumes:
-        - .:/application
+        - ./project:/application
         - ./phpdocker/php-fpm/php-ini-overrides.ini:/etc/php/7.2/fpm/conf.d/99-overrides.ini
 
