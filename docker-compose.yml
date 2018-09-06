@@ -14,11 +14,12 @@ services:
       working_dir: /application
       volumes:
         - .:/application
+        - ./storage-db:/var/lib/mysql
       environment:
         - MYSQL_ROOT_PASSWORD=root
         - MYSQL_DATABASE=fullstack_angular_laravel
         - MYSQL_USER=t3chdev
-        - MYSQL_PASSWORD=root
+        - MYSQL_PASSWORD=password
       ports:
         - "8083:3306"
 
